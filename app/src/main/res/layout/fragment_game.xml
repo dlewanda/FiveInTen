@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".GameActivityFragment">
+
+    <TextView
+        android:id="@+id/categoryTextView"
+        android:text="@string/category_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/timerTextView"
+        android:text="00:00"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryTextView"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/linearLayout"
+        android:layout_toStartOf="@+id/startButton" />
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/categoryTextView"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/startButton"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+        <CheckBox
+            android:id="@+id/firstAnswer"
+            android:text="ONE"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <CheckBox
+            android:id="@+id/secondAnswer"
+            android:text="TWO"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:enabled="false"/>
+        <CheckBox
+            android:id="@+id/ThirdAnswer"
+            android:text="THREE"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:enabled="false"/>
+        <CheckBox
+            android:id="@+id/fourthAnswer"
+            android:text="FOUR"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:enabled="false"/>
+        <CheckBox
+            android:id="@+id/fifthAnswer"
+            android:text="FIFTH"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</RelativeLayout>
